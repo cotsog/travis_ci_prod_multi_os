@@ -1,4 +1,4 @@
-# Trigger buil
+os: osx
 language: cpp
 compiler:
   - clang
