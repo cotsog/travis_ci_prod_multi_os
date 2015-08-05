@@ -1,8 +1,7 @@
 os: osx
-language: cpp
-compiler:
-  - clang
+language: objective-c
+
 sudo: false
 
 script:
-  - clang --version
+  - pod --version
