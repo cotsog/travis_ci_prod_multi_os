@@ -4,8 +4,7 @@ osx_image: xcode6.4
 
 sudo: false
 
-before_script:
-  - xctool --version
+before_install:
   - brew switch xctool 0.2.4
 
 script:
