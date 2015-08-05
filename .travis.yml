@@ -4,4 +4,4 @@ language: objective-c
 sudo: false
 
 script:
-  - pod --version
+  - xctool --version
