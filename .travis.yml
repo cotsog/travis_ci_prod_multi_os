@@ -1,11 +1,4 @@
 os: osx
-language: objective-c
-osx_image: xcode6.4
-
-sudo: false
-
-before_install:
-  - brew switch xctool 0.2.4
-
-script:
-  - xctool --version
+language: ruby
+ruby:
+  - 2.2
