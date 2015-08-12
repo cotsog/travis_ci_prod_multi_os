@@ -2,4 +2,4 @@ os: osx
 language: ruby
 ruby:
   - 2.2.2
-script: echo $TRAVIS_RUBY_VERSION
+script: env
