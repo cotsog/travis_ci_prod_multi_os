@@ -2,4 +2,5 @@ language: objective-c
 osx_image: xcode6.4
 script:
   - instruments -s devices
-  - instruments -t /Applications/Xcode.app/Contents/Applications/Instruments.app/Contents/PlugIns/AutomationInstrument.xrplugin/Contents/Resources/Automation.tracetemplate -w "iPad 2 (8.4 Simulator)"
+  - screencapture /var/tmp/screenshot.jpg
+  - curl -T /var/tmp/screenshot.jpg chunk.io
