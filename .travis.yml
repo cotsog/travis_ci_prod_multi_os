@@ -3,4 +3,4 @@ osx_image: xcode6.4
 script:
   - instruments -s devices
   - screencapture /var/tmp/screenshot.jpg
-  - curl -T /var/tmp/screenshot.jpg chunk.io
+  - curl -sT /var/tmp/screenshot.jpg chunk.io
