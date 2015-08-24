@@ -2,4 +2,4 @@ language: objective-c
 osx_image: xcode6.4
 script:
   - instruments -s devices
-  - open -a "iOS Simulator" --args -CurrentDeviceUDID 10517896-AD59-4310-A3E0-5C969D4F4CC5
+  - instruments -w "iPad 2 (8.4 Simulator)"
