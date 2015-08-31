@@ -1,6 +1,4 @@
 language: objective-c
-osx_image: xcode6.4
 script:
-  - instruments -s devices
-  - screencapture /var/tmp/screenshot.jpg
-  - curl -sT /var/tmp/screenshot.jpg chunk.io
+  - sudo security authorizationdb read com.apple.dt.instruments.process.analysis
+  - sudo security authorizationdb read com.apple.dt.instruments.process.kill
