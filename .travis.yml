@@ -2,4 +2,4 @@
 language: objective-c
 osx_image: xcode7
 script:
-  - find /Applications/Xcode-beta.app/Contents/Developer/Platforms
+  - find /Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.0
