@@ -1,5 +1,5 @@
 language: objective-c
 script:
-  - pods --version
+  - pod --version
   - sudo gem install cocoapods
-  - pods --version
+  - pod --version
