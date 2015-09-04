@@ -4,3 +4,4 @@ script:
   - sudo gem install cocoapods
   - pod --version
   - which pod
+  - ls -al /Users/travis/.rvm/gems/ruby-2.0.0-p481/
