@@ -2,4 +2,4 @@
 language: objective-c
 osx_image: xcode7
 script:
-  - ls -al /Applications/Xcode-beta.app/
+  - find /Applications/Xcode-beta.app/Contents/Developer/Platforms
