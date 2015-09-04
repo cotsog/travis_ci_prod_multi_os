@@ -2,8 +2,4 @@
 language: objective-c
 osx_image: xcode7
 script:
-  - xcrun simctl list devices
-  - sleep 60
-  - xcrun simctl list devices
-  - xcrun simctl list devices | grep -v '^[-=]' | cut -d "(" -f2 | cut -d ")" -f1 | xargs -I {} xcrun simctl erase "{}"
-  - xcrun simctl list devices
+  - ls -al /Applications/Xcode-beta.app/
