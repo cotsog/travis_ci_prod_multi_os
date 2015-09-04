@@ -3,3 +3,4 @@ script:
   - pod --version
   - sudo gem install cocoapods
   - pod --version
+  - which pod
