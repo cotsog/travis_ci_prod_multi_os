@@ -1,8 +1,5 @@
 # Trigger
 language: objective-c
+osx: xcode7
 script:
-  - pod --version
-  - sudo gem install cocoapods
-  - pod --version
-  - which pod
-  - ls -al /Users/travis/.rvm/gems/ruby-2.0.0-p481/
+  - xcrun simctl list devices
