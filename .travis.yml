@@ -6,3 +6,6 @@ script:
   - sudo gem uninstall cocoapods
   - sudo gem install cocoapods -v 0.34.4
   - pod --version
+  - gem uninstall cocoapods
+  - gem install cocoapods -v 0.34.4
+  - pod --version
