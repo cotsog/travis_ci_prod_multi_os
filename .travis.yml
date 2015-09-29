@@ -1,11 +1,9 @@
 language: objective-c
 osx_image: xcode7
 before_install:
-  - gem list
-  - gem update fastlane --verbose
-  - gem list
-  - sudo gem uninstall fastlane
-  - sudo gem install fastlane -v 1.29.2
+  - wget https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg --no-check-certificate
+  - open ./googlechrome.dmg
+  - sleep 3
 script:
   - fastlane --version
   - sleep 3
