@@ -3,7 +3,7 @@ osx_image: xcode7
 before_install:
   - wget https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg --no-check-certificate
   - hdiutil attach ./googlechrome.dmg
-  - "cp /Volumes/Google\\ Chrome/Google\\ Chrome.app/ /Applications/"
+  - "cp -r /Volumes/Google\\ Chrome/Google\\ Chrome.app/ /Applications/"
   - sleep 3
 script:
   - fastlane --version
