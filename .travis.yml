@@ -6,5 +6,5 @@ before_install:
   - "cp -r /Volumes/Google\\ Chrome/Google\\ Chrome.app/ /Applications/"
   - sleep 3
 script:
-  - fastlane --version
+  - true
   - sleep 3
