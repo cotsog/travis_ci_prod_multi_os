@@ -1,10 +1,14 @@
 language: generic
 os: osx
 before_install:
+  - pwd
+  - find .
   - git clone --branch v0.28.0 https://github.com/creationix/nvm.git $HOME/.nvm && cd $HOME/.nvm || true
   - set +e; source $HOME/.nvm/nvm.sh; set -e
   - nvm install 4.1.1
 install:
+  - pwd
+  - find .
   - cd nodejs
   - npm install
   - cd ..
