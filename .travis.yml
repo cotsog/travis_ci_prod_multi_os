@@ -5,7 +5,10 @@ before_install:
   - set +e; source $HOME/.nvm/nvm.sh; set -e
   - nvm install 4.1.1
 install:
+  - pwd
   - cd $TRAVIS_BUILD_DIR
+  - pwd
+  - find .
   - cd nodejs
   - npm install
   - cd ..
