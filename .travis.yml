@@ -5,8 +5,8 @@ before_install:
   - set +e; source $HOME/.nvm/nvm.sh; set -e
   - nvm install 4.1.1
 install:
-  - pushd nodejs
+  - cd nodejs
   - npm install
-  - popd
+  - cd ..
 cache:
   - nodejs/node_modules
