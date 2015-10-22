@@ -12,5 +12,6 @@ install:
   - cd nodejs
   - npm install
   - cd ..
+script: true
 cache:
   - nodejs/node_modules
