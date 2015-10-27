@@ -7,4 +7,4 @@ matrix:
     - osx_image: xcode7.1
 
 install: true
-script: xcrun simctl list
+script: instruments -s devices | grep "iPhone 6 (9.0
