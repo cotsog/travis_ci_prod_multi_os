@@ -8,5 +8,8 @@ matrix:
     - osx_image: xcode7.1
 
 install: true
-script: instruments -s devices
+script:
+  - instruments -s devices
+  - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "iPhone 5s (8.4)" | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
+  - echo $IOS_SIMULATOR_UDID
 
