@@ -1,6 +1,10 @@
 language: objective-c
 osx_image: xcode6.4
 
+cache:
+  directories:
+    - ./nodejs
+
 matrix:
   include:
     - osx_image: xcode6.4
