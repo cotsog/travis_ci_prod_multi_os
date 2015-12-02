@@ -1,15 +1,7 @@
-language: generic
+language: objective-c
 os: osx
+osx_image: xcode7.1
 
+install: true
 
-
-install:
-  # install brew cask
-  - brew install caskroom/cask/brew-cask
-
-  # install xamarin components
-  - brew cask install xamarin xamarin-jdk xamarin-ios xamarin-studio
-
-script:
-  - true
-
+script: true
