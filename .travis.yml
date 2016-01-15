@@ -1,7 +1,6 @@
 sudo: required
-install: true
+install:
+  - sudo apt-get update -y
+  - sudo apt-get install pstack
 script: pstack
-addons:
-  apt:
-    packages:
-      - pstack
+
