@@ -1,2 +1,5 @@
 install: true
 script: pstack
+apt:
+  packages:
+    - pstack
