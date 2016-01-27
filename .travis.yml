@@ -1,6 +1,10 @@
-sudo: required
-install:
-  - sudo apt-get update -y
-  - sudo apt-get install pstack
-script: pstack
+language: objective-c
+xcode_image: xcode7.3
+matrix:
+  include:
+    - xcode_image: xcode7.2
+    - xcode_image: xcode7.1
+    - xcode_image: xcode7.0
+install: true
+script: oclint -version
 
