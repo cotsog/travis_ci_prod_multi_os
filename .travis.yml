@@ -2,6 +2,7 @@ language: objective-c
 xcode_image: xcode7.3
 matrix:
   include:
+    - xcode_image: xcode7.3
     - xcode_image: xcode7.2
     - xcode_image: xcode7.1
     - xcode_image: xcode7.0
