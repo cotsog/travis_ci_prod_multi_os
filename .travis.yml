@@ -7,6 +7,6 @@ matrix:
     - osx_image: xcode7.0
 install:
   - brew update
-  - brew tap brew-cask
-  - brew upgrade oclint || brew install oclint
+  - brew install caskroom/cask/brew-cask
+  - brew cask install oclint
 script: oclint -version
