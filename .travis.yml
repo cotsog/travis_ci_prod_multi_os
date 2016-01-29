@@ -1,5 +1,4 @@
 language: objective-c
-xcode_image: xcode7.3
 matrix:
   include:
     - xcode_image: xcode7.3
