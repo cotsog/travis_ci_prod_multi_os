@@ -5,6 +5,6 @@ matrix:
     - osx_image: xcode7.1
     - osx_image: xcode7.0
 before_install:
-  - gem update fastlane
+  - gem update fastlane --no-document
 install: true
 script: true
