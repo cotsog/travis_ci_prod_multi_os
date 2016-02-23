@@ -5,5 +5,5 @@ matrix:
 
 install: true
 script:
-  - security find-certificate -a -c 'Apple Worldwide Developer Relations Certification Authority' -Z
-  - sudo security find-certificate -a -c 'Apple Worldwide Developer Relations Certification Authority' -Z
+  - chmod +x ./nuke-cert.sh
+  - ./nuke-cert.sh
