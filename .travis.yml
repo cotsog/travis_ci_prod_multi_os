@@ -7,3 +7,5 @@ install: true
 script:
   - chmod +x ./nuke-cert.sh
   - ./nuke-cert.sh
+  - security find-identity ~/Library/Keychains/login.keychain
+  - security find-identity -v -p codesigning
