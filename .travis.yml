@@ -3,6 +3,7 @@ osx_image: xcode7.2
 install: true
 script:
   - python --version
-  - curl -sSL https://bootstrap.pypa.io/get-pip.py | python
+  - curl -sSL https://bootstrap.pypa.io/get-pip.py -o /tmp/get-pip.py
+  - python /tmp/get-pip.py --user --no-wheel
   - pip --version || true
   - sleep 3
