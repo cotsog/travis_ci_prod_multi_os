@@ -1,9 +1,8 @@
 language: objective-c
 osx_image: xcode7.3
 
-install: true
+rvm: 2.2.3
 
 script:
-  - wget https://ssl-download-crashlytics-com.s3.amazonaws.com/fabric/builds/Fabric-latest.zip
-  - unzip Fabric-latest.zip
-  - mv Fabric.app /Applications
+  - xcpretty --version || true
+  - bundle exec xcpretty --version || true
