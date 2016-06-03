@@ -2,6 +2,11 @@ language: objective-c
 
 osx_image: xcode7.3
 
-before_install:
-  - python -V
-  - sleep 3
+install: true
+
+script:
+  - fastlane --version
+  - scan --version
+  - gem update scan
+  - fastlane --version
+  - scan --version
