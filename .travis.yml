@@ -7,4 +7,4 @@ install: true
 script:
   - git clone https://github.com/mislav/ssl-tools.git
   - cd ssl-tools
-  - ruby doctor.rb https://upload.hockeyapp.net:443
+  - ruby doctor.rb upload.hockeyapp.net:443
