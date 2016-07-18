@@ -14,7 +14,4 @@ matrix:
 install: true
 
 script: 
-  - cd ~/.cocoapods/repos/master
-  - GIT_PAGER=cat git log -1
-  - time pod setup
-  - sleep 3
+  - xcrun simctl list
