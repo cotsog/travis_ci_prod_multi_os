@@ -16,4 +16,5 @@ install: true
 script:
   - set -o pipefail
   - export UDID=`xcrun simctl list devices | grep "$SIMULATOR (" | awk -F '[ ]' '{ print $7 }' | awk -F '[\(]' '{print $2}' | sed 's/.$//'`
-  - echo UDID
+  - echo $UDID
+  - sleep 3
