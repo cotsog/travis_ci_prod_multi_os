@@ -11,14 +11,10 @@ env:
   - SIMULATOR="iPhone 6s (10.0)"
   - SIMULATOR="iPhone 6s Plus (10.0)"  
 
-matrix:
-  include:
-    - osx_image: xcode8
-
 install: true
 
 script:
   - export STRING_TO_MATCH="$SIMULATOR \["
   - echo "[ $STRING_TO_MATCH ]"
-  - export IOS_SIMULATOR_UDID=`instruments -s devices | grep $STRING_TO_MATCH`
+  - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "$STRING_TO_MATCH"`
   - echo $IOS_SIMULATOR_UDID
