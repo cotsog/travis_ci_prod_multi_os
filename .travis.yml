@@ -1,20 +1,6 @@
-language: objective-c
-
-osx_image: xcode8
-
-env:
-  - SIMULATOR="iPhone 5"
-  - SIMULATOR="iPhone 5s"
-  - SIMULATOR="iPhone SE"
-  - SIMULATOR="iPhone 6"
-  - SIMULATOR="iPhone 6 Plus"
-  - SIMULATOR="iPhone 6s"
-  - SIMULATOR="iPhone 6s Plus"  
+language: swift # or objective-c
+osx_image: xcode7.3
 
 install: true
 
-script:
-  - set -o pipefail
-  - export UDID=`xcrun simctl list devices | grep "$SIMULATOR (" | awk -F '[ ]' '{ print $7 $8 }' | awk -F '[\(]' '{print $2}' | sed 's/.$//'`
-  - echo $UDID
-  - sleep 3
+script: true
