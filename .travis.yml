@@ -3,13 +3,17 @@ language: objective-c
 osx_image: xcode8
 
 env:
-  - SIMULATOR_DEVICE="iPhone 5"
+  - SIMULATOR="iPhone 5"
+  - SIMULATOR="iPhone 5s"
+  - SIMULATOR="iPhone SE"
+  - SIMULATOR="iPhone 6"
+  - SIMULATOR="iPhone 6 Plus"
+  - SIMULATOR="iPhone 6s"
+  - SIMULATOR="iPhone 6s Plus"  
 
 install: true
 
 script:
   - set -o pipefail
-  - export STRING_TO_MATCH="$SIMULATOR \("
-  - echo "[ $STRING_TO_MATCH ]"
-  - xcrun simctl list devices | grep "$SIMULATOR \("
-  - xcrun simctl list devices | grep "$SIMULATOR \(" | awk -F '[ ]' '{print $1 $2 $3 $4}'
+  - export UDID=`xcrun simctl list devices | grep "$SIMULATOR (" | awk -F '[ ]' '{ print $7 }' | awk -F '[\(]' '{print $2}' | sed 's/.$//'`
+  - echo UDID
