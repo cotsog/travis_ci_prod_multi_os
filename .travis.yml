@@ -18,5 +18,5 @@ matrix:
 install: true
 
 script: 
-  - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "$SIMULATOR \[" | awk -F '[ ]' '{print $4}' | awk -F '[\[]' '{print $2}' | sed 's/.$//'`
+  - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "$SIMULATOR \["`
   - echo $IOS_SIMULATOR_UDID
