@@ -14,6 +14,7 @@ env:
 install: true
 
 script:
+  - set -o pipefail
   - export STRING_TO_MATCH="$SIMULATOR \["
   - echo "[ $STRING_TO_MATCH ]"
   - export IOS_SIMULATOR_UDID=`instruments -s devices | grep "$STRING_TO_MATCH"`
