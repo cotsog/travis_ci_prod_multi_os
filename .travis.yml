@@ -17,4 +17,4 @@ script:
   - set -o pipefail
   - export STRING_TO_MATCH="$SIMULATOR \["
   - echo "[ $STRING_TO_MATCH ]"
-  - instruments -s devices
+  - xcrun simctl list devices
