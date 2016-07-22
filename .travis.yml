@@ -14,4 +14,4 @@ matrix:
   
 install: true
 
-script: true
+script: pod --version
