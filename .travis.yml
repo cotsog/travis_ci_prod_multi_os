@@ -1,11 +1,12 @@
-language: ruby
-
-matrix:
-  include:
-    - os: linux
-    - os: osx
-      osx_image: xcode7.3
-
+language: objective-c
+osx_image:
+  - xcode7.3
+  
+before_install:
+  - brew update
+  - brew upgrade
+  - npm install -g cordova ionic
+  
 install: true
 
 script: true
