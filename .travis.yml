@@ -15,4 +15,5 @@ matrix:
   
 install: true
 
-script: df -h
+script:
+  - df -h
