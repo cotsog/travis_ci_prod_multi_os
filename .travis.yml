@@ -17,3 +17,4 @@ install: true
 
 script:
   - df -h
+  - sleep 5
