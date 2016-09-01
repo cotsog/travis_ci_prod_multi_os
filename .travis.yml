@@ -16,5 +16,5 @@ matrix:
 install: true
 
 script:
-  - df -h
-  - sleep 5
+  - bash --version
+  - pod repo update
