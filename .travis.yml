@@ -12,9 +12,11 @@ matrix:
     - osx_image: beta-xcode6.3
     - osx_image: beta-xcode6.2
     - osx_image: beta-xcode6.1
-  
+
 install: true
 
-script:
-  - bash --version
-  - pod repo update
+script: 
+  - cd ~/.cocoapods/repos/master || true
+  - GIT_PAGER=cat git log -1 || true
+  - time pod repo update || true
+  - sleep 3
