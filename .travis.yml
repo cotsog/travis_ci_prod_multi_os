@@ -5,7 +5,7 @@ rvm: 2.2.1
 install:
   - bundle --version
   - rvm @global do gem uninstall bundler -a -x
-  - rvm @global do gem install bundler -v 1.13.0
+  - rvm @global do gem install bundler -v 1.12
   - gem uninstall bundler -a -x
   - gem install bundler -v 1.12
   - bundle --version
