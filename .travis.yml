@@ -7,6 +7,6 @@ install:
   - rvm @global do gem uninstall bundler -a -x
   - rvm @global do gem install bundler -v 1.13.0
   - gem uninstall bundler -a -x
-  - gem install bundler -v 1.13.0
+  - gem install bundler -v 1.12
   - bundle --version
 script: pod --version
