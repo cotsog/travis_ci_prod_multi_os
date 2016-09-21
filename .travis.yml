@@ -4,9 +4,6 @@ rvm: 2.2.1
 
 install:
   - bundle --version
-  - rvm @global do gem uninstall bundler -v 1.13.1
-  - rvm @global do gem install bundler -v 1.12.5
-  - bundle --version
   - pod --version || true
   - gem uninstall bundler -v 1.13.1
   - gem install bundler -v 1.12.5
