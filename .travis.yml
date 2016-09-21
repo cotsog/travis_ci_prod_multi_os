@@ -2,5 +2,7 @@ language: objective-c
 osx_image: xcode7.3
 rvm: 2.2.1
 
-install: true
+install:
+  - rvm @global do gem uninstall bundler -a -x
+  - rvm @global do gem install bundler -v 1.13.0
 script: pod --version
