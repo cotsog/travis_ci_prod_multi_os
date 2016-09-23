@@ -1,5 +1,9 @@
-language: objective-c
-osx_image: xcode7.3
-
+language: node_js
+node_js: 6
+sudo: false
+os: osx
+matrix:
+  include:
+    - osx_image: xcode7.3
 install: true
-script: while :; do echo 'Hit CTRL+C'; sleep 60; done
+script: true
