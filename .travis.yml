@@ -1,3 +1,4 @@
+# Trigger
 language: objective-c
 
 matrix:
@@ -15,8 +16,7 @@ matrix:
 
 install: true
 
-script: 
-  - cd ~/.cocoapods/repos/master || true
-  - GIT_PAGER=cat git log -1 || true
-  - time pod repo update || true
-  - sleep 3
+script: true
+
+after_script:
+  - sleep 10
