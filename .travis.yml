@@ -1,24 +1,16 @@
-# Trigger
 language: objective-c
-
-matrix:
-  include:
-    - osx_image: xcode8.1
-    - osx_image: xcode8
-    - osx_image: xcode7.3
-    - osx_image: xcode7.2
-    - osx_image: xcode7.1
-    - osx_image: xcode7
-    - osx_image: xcode6.4
-    - osx_image: beta-xcode6.3
-    - osx_image: beta-xcode6.2
-    - osx_image: beta-xcode6.1
-
+osx_image: xcode8
+git:
+  depth: 3
+before_install:
+  - sudo gem uninstall bundler -v1.13
+  - sudo gem install -n /usr/local/bin bundler -v 1.12
+  - "echo -e \"machine github.com\\n login ragopor\\n password $CI_USER_PASSWORD\" >> ~/.netrc"
+  - pod repo update --silent
+  - gem install fastlane --no-rdoc --no-ri --no-document --quiet
+  - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
+  - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 install: true
-
 script:
-  - sysctl hw.memsize
-  - sysctl hw.ncpu
-
-after_script:
-  - sleep 10
+  - set -o pipefail
+  - travis_retry fastlane --version
