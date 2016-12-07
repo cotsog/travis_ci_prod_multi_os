@@ -10,7 +10,9 @@ before_install:
   - gem install fastlane --no-rdoc --no-ri --no-document --quiet
   - gem install cocoapods --no-rdoc --no-ri --no-document --quiet
   - gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+  - pushd .
 install: true
 script:
+  - popd
   - set -o pipefail
   - travis_retry fastlane --version
